@@ -104,11 +104,11 @@ Domain-specific knowledge modules. Skills are loaded on-demand based on task con
 ### Other
 | Skill | Description |
 |-------|-------------|
-| (None) | No agents implemented yet | - |
+| `skill-creator` | Guide for creating effective skills |
 
 ---
 
-## 🔄 Workflows (11)
+## 🔄 Workflows (1)
 
 Slash command procedures. Invoke with `/command`.
 
@@ -153,9 +153,9 @@ skill-name/
 | Metric | Value |
 |--------|-------|
 | **Total Agents** | 0 |
-| **Total Skills** | 0 |
+| **Total Skills** | 1 |
 | **Total Workflows** | 1 |
-| **Coverage** | 0% |
+| **Coverage** | ~2% |
 
 ---
 

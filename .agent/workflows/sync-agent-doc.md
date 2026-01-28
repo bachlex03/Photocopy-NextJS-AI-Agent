@@ -21,7 +21,8 @@ This command update `GEMINI.md` and `ARCHITECTURE.md` if needed
 1. **Load current state**:
    - Check agent folder, skill folder, workflow folder
 2. **Sync/Refactor (if missing agent, skill, script, workflow)**
-    - Refactor "GEMINI.md" and "ARCHITECTURE.md" (if not sync)
+    - **Warning & Acceptance**: If discrepancies are found, list the missing/extra items and **warn the user**.
+    - **Mandatory**: Ask for user confirmation before refactoring "GEMINI.md" and "ARCHITECTURE.md".
     - **Formatting Rule for Architecture**: If a skill category section has no implemented skills, it must be marked as:
       `| (None) | No agents implemented yet | - |`
-    - Do not refactor "GEMINI.md" and "ARCHITECTURE.md" (if sync)
+    - If in sync, do nothing.

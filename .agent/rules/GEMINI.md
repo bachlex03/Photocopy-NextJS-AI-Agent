@@ -95,11 +95,11 @@ Agent calling: [Agent 'name]
 |-------|----------------|
 | (None) | No agents implemented yet |
 
-### Key Skills (0)
+### Key Skills (1)
 
 | Skill | Purpose |
 |-------|---------|
-| (None) | No skills implemented yet |
+| `skill-creator` | Guide for creating effective skills |
 
 ### Script Locations
 
