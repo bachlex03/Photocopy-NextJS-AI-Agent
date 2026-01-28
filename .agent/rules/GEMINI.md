@@ -95,10 +95,11 @@ Agent calling: [Agent 'name]
 |-------|----------------|
 | (None) | No agents implemented yet |
 
-### Key Skills (1)
+### Key Skills (2)
 
 | Skill | Purpose |
 |-------|---------|
+| `frontend-design` | Create distinctive, production-grade frontend interfaces |
 | `skill-creator` | Guide for creating effective skills |
 
 ### Script Locations

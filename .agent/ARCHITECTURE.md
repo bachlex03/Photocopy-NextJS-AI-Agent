@@ -44,7 +44,7 @@ Domain-specific knowledge modules. Skills are loaded on-demand based on task con
 ### Frontend & UI
 | Skill | Description |
 |-------|-------------|
-| (None) | No agents implemented yet | - |
+| `frontend-design` | Create distinctive, production-grade frontend interfaces |
 
 ### Backend & API
 | Skill | Description |
@@ -153,9 +153,9 @@ skill-name/
 | Metric | Value |
 |--------|-------|
 | **Total Agents** | 0 |
-| **Total Skills** | 1 |
+| **Total Skills** | 2 |
 | **Total Workflows** | 1 |
-| **Coverage** | ~2% |
+| **Coverage** | ~5% |
 
 ---
 
