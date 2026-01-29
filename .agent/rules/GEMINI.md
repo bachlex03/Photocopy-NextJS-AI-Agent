@@ -95,12 +95,14 @@ Agent calling: [Agent 'name]
 |-------|----------------|
 | (None) | No agents implemented yet |
 
-### Key Skills (2)
+### Key Skills (4)
 
 | Skill | Purpose |
 |-------|---------|
 | `frontend-design` | Create distinctive, production-grade frontend interfaces |
+| `react-best-practices` | React and Next.js performance optimization |
 | `skill-creator` | Guide for creating effective skills |
+| `web-design-guidelines` | Review UI code for Web Interface Guidelines compliance |
 
 ### Script Locations
 

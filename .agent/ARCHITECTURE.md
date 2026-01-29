@@ -45,6 +45,7 @@ Domain-specific knowledge modules. Skills are loaded on-demand based on task con
 | Skill | Description |
 |-------|-------------|
 | `frontend-design` | Create distinctive, production-grade frontend interfaces |
+| `react-best-practices` | React and Next.js performance optimization |
 
 ### Backend & API
 | Skill | Description |
@@ -69,7 +70,7 @@ Domain-specific knowledge modules. Skills are loaded on-demand based on task con
 ### Testing & Quality
 | Skill | Description |
 |-------|-------------|
-| (None) | No agents implemented yet | - |
+| `web-design-guidelines` | Review UI code for Web Interface Guidelines compliance |
 
 ### Security
 | Skill | Description |
@@ -153,9 +154,9 @@ skill-name/
 | Metric | Value |
 |--------|-------|
 | **Total Agents** | 0 |
-| **Total Skills** | 2 |
+| **Total Skills** | 4 |
 | **Total Workflows** | 1 |
-| **Coverage** | ~5% |
+| **Coverage** | ~10% |
 
 ---
 
