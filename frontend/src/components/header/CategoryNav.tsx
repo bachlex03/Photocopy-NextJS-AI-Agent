@@ -12,9 +12,6 @@ const categories = [
 	{ label: "Promotional Products", href: "#" },
 	{ label: "Packaging", href: "#" },
 	{ label: "Calendars & Gifts", href: "#" },
-	{ label: "Invitations, Stationery & Wedding", href: "#" },
-	{ label: "Logo, Websites & Social", href: "#" },
-	{ label: "Design Services", href: "#" },
 ];
 
 const CategoryNav = () => {
@@ -25,7 +22,7 @@ const CategoryNav = () => {
 					<Link
 						key={category.label}
 						href={category.href}
-						className={`text-[13px] font-medium leading-tight whitespace-nowrap px-1 py-2 border-b-2 border-transparent hover:border-black transition-all ${
+						className={`text-[13px] font-medium leading-tight whitespace-nowrap px-1 py-2 border-b-2 border-transparent hover:border-black transition-[color,border-color] duration-150 ease-out ${
 							category.highlight ? "text-[#C00000]" : "text-gray-800"
 						}`}
 					>

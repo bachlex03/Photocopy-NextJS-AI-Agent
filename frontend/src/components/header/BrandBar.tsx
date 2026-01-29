@@ -1,14 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import {
-	Folder,
-	Heart,
-	HelpCircle,
-	Search,
-	ShoppingBag,
-	User,
-} from "lucide-react";
+import { Languages, Search } from "lucide-react";
 
 const BrandBar = () => {
 	return (
@@ -41,42 +34,15 @@ const BrandBar = () => {
 					</button>
 				</div>
 
-				{/* Action Icons */}
+				{/* Language Selector */}
 				<div className="flex items-center gap-6 shrink-0">
 					<button
 						type="button"
-						title="Help"
-						className="text-gray-700 hover:text-black transition-transform hover:scale-110"
+						title="Select Language"
+						className="text-gray-700 hover:text-black transition-transform hover:scale-110 flex items-center gap-2"
 					>
-						<HelpCircle size={24} strokeWidth={1.5} />
-					</button>
-					<button
-						type="button"
-						title="My Projects"
-						className="text-gray-700 hover:text-black transition-transform hover:scale-110"
-					>
-						<Folder size={24} strokeWidth={1.5} />
-					</button>
-					<button
-						type="button"
-						title="Favorites"
-						className="text-gray-700 hover:text-black transition-transform hover:scale-110"
-					>
-						<Heart size={24} strokeWidth={1.5} />
-					</button>
-					<button
-						type="button"
-						title="Account"
-						className="text-gray-700 hover:text-black transition-transform hover:scale-110"
-					>
-						<User size={24} strokeWidth={1.5} />
-					</button>
-					<button
-						type="button"
-						title="Cart"
-						className="text-gray-700 hover:text-black relative transition-transform hover:scale-110"
-					>
-						<ShoppingBag size={24} strokeWidth={1.5} />
+						<Languages size={24} strokeWidth={1.5} />
+						<span className="text-sm font-medium hidden lg:block">English</span>
 					</button>
 				</div>
 			</div>
