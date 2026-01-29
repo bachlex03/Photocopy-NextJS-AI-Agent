@@ -1,9 +1,11 @@
 import Header from "~/components/layouts/header";
+import Hero from "~/components/layouts/_components/hero";
 
 export default function Home() {
 	return (
 		<div className="min-h-screen bg-gray-50 flex flex-col">
 			<Header />
+			<Hero />
 
 			{/* <main className="flex-1 max-w-screen-2xl mx-auto w-full p-8">
 				<div className="bg-white rounded-xl border border-gray-200 p-12 flex flex-col items-center justify-center text-center">
