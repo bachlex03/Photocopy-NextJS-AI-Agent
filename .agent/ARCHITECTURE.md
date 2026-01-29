@@ -7,9 +7,9 @@
 ## 📋 Overview
 
 Antigravity Kit is a modular system consisting of:
-- **16 Specialist Agents** - Role-based AI personas
-- **40 Skills** - Domain-specific knowledge modules
-- **11 Workflows** - Slash command procedures
+- **9 Specialist Agents** - Role-based AI personas
+- **14 Skills** - Domain-specific knowledge modules
+- **1 Workflow** - Slash command procedures (sync)
 
 ---
 
@@ -18,26 +18,34 @@ Antigravity Kit is a modular system consisting of:
 ```
 .agent/
 ├── ARCHITECTURE.md          # This file
-├── agents/                  # 16 Specialist Agents
-├── skills/                  # 40 Skills
-├── workflows/               # 11 Slash Commands
-├── rules/                   # Global Rules
+├── agents/                  # 9 Specialist Agents
+├── skills/                  # 14 Skills
+├── workflows/               # 1 Slash Command
+├── rules/                   # Global Rules (GEMINI.md)
 └── .shared/                 # Shared Resources
 ```
 
 ---
 
-## 🤖 Agents (0)
+## 🤖 Agents (9)
 
 Specialist AI personas for different domains.
 
 | Agent | Focus | Skills Used |
 |-------|-------|-------------|
-| (None) | No agents implemented yet | - |
+| `explorer-agent` | Advanced discovery, architectural analysis | `clean-code`, `architecture`, `plan-writing` |
+| `frontend-specialist` | Senior Frontend Architect; Next.js expert | `clean-code`, `react-patterns`, `nextjs-best-practices` |
+| `orchestrator` | Multi-agent coordination and synthesis | `clean-code`, `parallel-agents`, `behavioral-modes` |
+| `penetration-tester` | Offensive security and exploitation | `clean-code`, `vulnerability-scanner`, `red-team-tactics` |
+| `performance-optimizer` | Profiling and Core Web Vitals | `clean-code`, `performance-profiling` |
+| `project-planner` | Task breakdown and dependency planning | `clean-code`, `app-builder`, `plan-writing` |
+| `security-auditor` | Cybersecurity expert; OWASP defense | `clean-code`, `vulnerability-scanner`, `api-patterns` |
+| `seo-specialist` | SEO and GEO (AI search) expert | `clean-code`, `seo-fundamentals`, `geo-fundamentals` |
+| `test-engineer` | Testing automation and TDD specialist | `clean-code`, `testing-patterns`, `tdd-workflow` |
 
 ---
 
-## 🧠 Skills (0)
+## 🧠 Skills (14)
 
 Domain-specific knowledge modules. Skills are loaded on-demand based on task context.
 
@@ -45,7 +53,10 @@ Domain-specific knowledge modules. Skills are loaded on-demand based on task con
 | Skill | Description |
 |-------|-------------|
 | `frontend-design` | Create distinctive, production-grade frontend interfaces |
-| `react-best-practices` | React and Next.js performance optimization |
+| `react-patterns` | Modern React principles, hooks, and composition |
+| `nextjs-best-practices` | Next.js App Router, Server Components patterns |
+| `tailwind-patterns` | Tailwind CSS v4 principles and design tokens |
+| `vercel-react-best-practices` | Vercel Engineering performance guidelines |
 
 ### Backend & API
 | Skill | Description |
@@ -60,7 +71,8 @@ Domain-specific knowledge modules. Skills are loaded on-demand based on task con
 ### TypeScript/JavaScript
 | Skill | Description |
 |-------|-------------|
-| (None) | No agents implemented yet | - |
+| `typescript-expert` | Deep type-level programming and TS performance |
+| `lint-and-validate` | Quality control, linting, and static analysis loop |
 
 ### Cloud & Infrastructure
 | Skill | Description |
@@ -71,6 +83,7 @@ Domain-specific knowledge modules. Skills are loaded on-demand based on task con
 | Skill | Description |
 |-------|-------------|
 | `web-design-guidelines` | Review UI code for Web Interface Guidelines compliance |
+| `performance-profiling` | Measurement, analysis, and optimization techniques |
 
 ### Security
 | Skill | Description |
@@ -95,7 +108,8 @@ Domain-specific knowledge modules. Skills are loaded on-demand based on task con
 ### SEO & Growth
 | Skill | Description |
 |-------|-------------|
-| (None) | No agents implemented yet | - |
+| `seo-fundamentals` | SEO fundamentals, E-E-A-T, and algorithm principles |
+| `geo-fundamentals` | Generative Engine Optimization for AI search |
 
 ### Shell/CLI
 | Skill | Description |
@@ -105,7 +119,9 @@ Domain-specific knowledge modules. Skills are loaded on-demand based on task con
 ### Other
 | Skill | Description |
 |-------|-------------|
-| `skill-creator` | Guide for creating effective skills |
+| `skill-creator` | Guide for creating effective and modular skills |
+| `clean-code` | Pragmatic coding standards - concise and direct |
+| `i18n-localization` | Internationalization and localization patterns |
 
 ---
 
@@ -153,10 +169,10 @@ skill-name/
 
 | Metric | Value |
 |--------|-------|
-| **Total Agents** | 0 |
-| **Total Skills** | 4 |
+| **Total Agents** | 9 |
+| **Total Skills** | 14 |
 | **Total Workflows** | 1 |
-| **Coverage** | ~10% |
+| **Coverage** | ~35% |
 
 ---
 

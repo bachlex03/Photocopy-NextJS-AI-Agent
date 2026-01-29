@@ -35,9 +35,11 @@ Agent activated → Check frontmatter "skills:" field
 1. **When agent is activated:**
    - ✅ READ all rules inside the agent file.
    - ✅ CHECK frontmatter `skills:` list.
+   - ✅ **VALIDATE SKILL EXISTENCE**: Verify every listed skill has a corresponding folder in `.agent/skills/`.
    - ✅ LOAD each skill's `SKILL.md`.
    - ✅ APPLY all rules from agent AND skills.
 2. **Forbidden:** Never skip reading agent rules or skill instructions. "Read → Understand → Apply" is mandatory.
+3. **Skill Verification**: If an agent attempts to use a skill that does not exist in the filesystem, you MUST **WARNING** the user and **STOP** immediately. Do NOT proceed with code generation or response.
 
 ---
 
@@ -81,7 +83,11 @@ Agent calling: [Agent 'name]
 
 ### CRITICAL: When STOP response output?
 
-**Validation**: When there are no exist workflow' name, agent' name, skill' name. You must WARNING user these are not exist then STOP response
+**Validation**: You must verify the existence of every workflow, agent, and skill BEFORE mention in your response.
+- If a workflow, agent, or skill name mentioned in your logic does not exist in the `.agent/` directory:
+  1. **WARNING** the user about the missing resource.
+  2. **STOP** the response immediately.
+- **NEVER** hallucinate or proceed with non-existent skills.
 
 ## CRITICAL: Validate "QUICK REFERENCE" section
 
@@ -89,19 +95,37 @@ Agent calling: [Agent 'name]
 
 ## QUICK REFERENCE
 
-### Available Master Agents (0)
+### Available Master Agents (9)
 
 | Agent | Domain & Focus |
 |-------|----------------|
-| (None) | No agents implemented yet |
+| `explorer-agent` | Advanced discovery, architectural analysis, and proactive research |
+| `frontend-specialist` | Senior Frontend Architect; maintainable React/Next.js systems |
+| `orchestrator` | Multi-agent coordination and complex task orchestration |
+| `penetration-tester` | Offensive security, red team operations, and exploitation |
+| `performance-optimizer` | Profiling, Core Web Vitals, and bundle optimization |
+| `project-planner` | Task breakdown, file planning, and agent assignment |
+| `security-auditor` | Cybersecurity expert; OWASP 2025 and defense-in-depth |
+| `seo-specialist` | SEO and GEO (Generative Engine Optimization) expert |
+| `test-engineer` | Testing automation, TDD, and quality assurance |
 
-### Key Skills (4)
+### Key Skills (14)
 
 | Skill | Purpose |
 |-------|---------|
-| `frontend-design` | Create distinctive, production-grade frontend interfaces |
-| `react-best-practices` | React and Next.js performance optimization |
-| `skill-creator` | Guide for creating effective skills |
+| `clean-code` | Pragmatic coding standards - concise, direct, solution-focused |
+| `frontend-design` | Distinctive, production-grade frontend interfaces (Anthropics Style) |
+| `geo-fundamentals` | Generative Engine Optimization for AI search engines |
+| `i18n-localization` | Internationalization and localization patterns (RTL/Locales) |
+| `lint-and-validate` | Quality control, linting, and static analysis loop |
+| `nextjs-best-practices` | Next.js App Router, Server Components, and routing patterns |
+| `performance-profiling` | Measurement, analysis, and optimization techniques |
+| `react-patterns` | Modern React principles, hooks, and composition |
+| `seo-fundamentals` | SEO fundamentals, E-E-A-T, and algorithm principles |
+| `skill-creator` | Guide for creating effective and modular skills |
+| `tailwind-patterns` | Tailwind CSS v4 principles and design token architecture |
+| `typescript-expert` | Deep type-level programming and TS performance |
+| `vercel-react-best-practices` | React/Next.js performance guidelines from Vercel Engineering |
 | `web-design-guidelines` | Review UI code for Web Interface Guidelines compliance |
 
 ### Script Locations
