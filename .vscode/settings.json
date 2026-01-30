@@ -8,5 +8,12 @@
 	"biome.lsp.bin": "frontend/node_modules/.bin/biome",
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
-	}
+	},
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
+	"tailwindCSS.experimental.configFile": "frontend/src/styles/globals.css"
 }
